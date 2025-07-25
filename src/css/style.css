@@ -1,9 +1,13 @@
 * {
   padding: 0;
   margin: 0;
-  vertical-align: baseline;
-  list-style: none;
-  border: 0;
+  box-sizing: border-box;
+}
+
+body *,
+:root {
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
 }
 
 body {
@@ -15,15 +19,29 @@ body {
 
 #container {
   width: 360px;
-  height: 712px;
-  margin: auto;
-  border: 1px solid red;
+  margin: 56px auto 0px;
 }
 
 #profile {
-  text-align: center
+  text-align: center;
+  padding: 24px;
 }
 
 #profile img {
-  width:112px;
+  width: 112px;
+}
+
+#profile p {
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 8px;
+}
+
+/* Links */
+ul {
+  list-style: none;
+}
+
+ul li {
+  border: 1px solid red;
 }
