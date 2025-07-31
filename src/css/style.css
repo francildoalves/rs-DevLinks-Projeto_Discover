@@ -4,17 +4,27 @@
   box-sizing: border-box;
 }
 
-body *,
 :root {
-  font-family: "Inter", sans-serif;
-  color: #16CC02;
+  --text-color: #16CC02;
+  --bg-url: url("/assets/bg-mobile.jpg");
+}
+
+.light {
+  --text-color: black;
+  --bg-url: url("/assets/bg-mobile-light.jpg");
 }
 
 body {
-  background-image: url("/assets/bg-mobile.jpg");
+  background-image: var(--bg-url);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
+}
+
+body *,
+:root {
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
 }
 
 #container {
